@@ -10,13 +10,13 @@ export function SocialProof() {
 
   return (
     <section id="features" className="relative py-24 lg:py-32 bg-card">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Trust badges */}
         <div className="text-center">
           <p className="text-sm font-semibold uppercase tracking-widest text-primary">
             {t.socialProof.trustedBy}
           </p>
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
+          <div className="mt-8 sm:mt-10 flex flex-wrap items-center justify-center gap-x-6 sm:gap-x-12 gap-y-4 sm:gap-y-6">
             {logos.map((logo) => (
               <div
                 key={logo}

@@ -10,12 +10,12 @@ export function Hero() {
   const t = useTranslation()
 
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center pt-16 sm:pt-20 overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-card" />
       <div className="absolute top-1/4 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl" />
 
-      <div className="relative mx-auto max-w-7xl px-6 lg:px-8 py-20 lg:py-32">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-20 lg:py-32">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left side - Content */}
           <div className="text-center lg:text-left">
@@ -36,20 +36,20 @@ export function Hero() {
               {t.hero.description}
             </p>
 
-            <div className="mt-10 flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
+            <div className="mt-8 sm:mt-10 flex flex-col items-stretch sm:flex-row sm:items-center gap-3 sm:gap-4 justify-center lg:justify-start">
               <DemoModal>
-                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-8 h-12 text-base cursor-pointer">
+                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-6 sm:px-8 h-11 sm:h-12 text-sm sm:text-base cursor-pointer w-full sm:w-auto">
                   {t.hero.requestDemo}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </DemoModal>
-              <Button variant="outline" size="lg" className="border-border text-foreground hover:bg-card h-12 text-base">
+              <Button variant="outline" size="lg" className="border-border text-foreground hover:bg-card h-11 sm:h-12 text-sm sm:text-base w-full sm:w-auto">
                 <Play className="mr-2 h-4 w-4" />
                 {t.hero.watchOverview}
               </Button>
             </div>
 
-            <div className="mt-12 flex items-center gap-8 justify-center lg:justify-start">
+            <div className="mt-8 sm:mt-12 flex items-center gap-4 sm:gap-8 justify-center lg:justify-start">
               <div>
                 <div className="text-3xl font-bold text-foreground">{t.hero.stat1.value}</div>
                 <div className="text-sm text-muted-foreground">{t.hero.stat1.label}</div>
@@ -96,12 +96,9 @@ export function Hero() {
             </div>
 
             {/* Decorative elements */}
-            <div className="absolute top-8 left-8 w-20 h-20 border-2 border-primary/30 rounded-2xl hidden lg:block"> <div className="flex items-center gap-3 cursor-pointer">
-              <div className="relative">
-                <img src="./logo.jpg" alt="ApexCam Logo" className=" rounded-xl border border-primary/30" />
-                <div className="absolute -inset-0.5 bg-gradient-to-br from-primary/30 to-accent/10 rounded-xl blur opacity-60" />
-              </div>
-            </div></div>
+            <div className="absolute top-8 left-8 w-16 h-16 border-2 border-primary/30 rounded-2xl hidden lg:block overflow-hidden">
+              <img src="/logo.jpg" alt="ApexCam Logo" className="w-full h-full object-cover rounded-2xl" />
+            </div>
             <div className="absolute -bottom-8 right-0 w-40 h-40 bg-primary/10 rounded-full blur-3xl" />
           </div>
         </div>

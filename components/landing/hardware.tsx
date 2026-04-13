@@ -12,7 +12,7 @@ export function Hardware() {
 
   return (
     <section id="hardware" className="relative py-24 lg:py-32 bg-card">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-widest text-primary">
             {t.hardware.sectionLabel}
@@ -70,9 +70,9 @@ export function Hardware() {
         </div>
 
         {/* Included items */}
-        <div className="mt-16 lg:mt-24 rounded-2xl bg-background border border-border p-8 lg:p-12">
-          <h3 className="text-xl font-semibold text-foreground mb-8">{t.hardware.whatsIncluded}</h3>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+        <div className="mt-16 lg:mt-24 rounded-2xl bg-background border border-border p-4 sm:p-8 lg:p-12">
+          <h3 className="text-xl font-semibold text-foreground mb-6 sm:mb-8">{t.hardware.whatsIncluded}</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
             {t.hardware.includedItems.map((item) => (
               <div key={item.item} className="flex items-center gap-3">
                 <span className="text-2xl font-bold text-primary">{item.count}</span>
