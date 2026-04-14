@@ -46,7 +46,7 @@ export function Header() {
             >
               <div className="relative flex-shrink-0">
                 <img
-                  src="/logo.jpg"
+                  src="/logo.png"
                   alt="ApexCam Logo"
                   className="h-9 w-9 sm:h-10 sm:w-10 rounded-xl border border-primary/30"
                 />
@@ -78,8 +78,8 @@ export function Header() {
           <div className="hidden lg:flex lg:gap-x-10">
             <Link href="/#features" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">{t.header.features}</Link>
             <Link href="/#hardware" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">{t.header.hardware}</Link>
-            <Link href="/#app"      className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">{t.header.app}</Link>
-            <Link href="/#contact"  className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">{t.header.contact}</Link>
+            <Link href="/#app" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">{t.header.app}</Link>
+            <Link href="/#contact" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">{t.header.contact}</Link>
           </div>
 
           {/* Desktop right: Language switcher + CTA */}
@@ -89,11 +89,10 @@ export function Header() {
                 <button
                   key={code}
                   onClick={() => setLocale(code)}
-                  className={`px-3 py-1 text-xs font-semibold transition-colors ${
-                    locale === code
+                  className={`px-3 py-1 text-xs font-semibold transition-colors ${locale === code
                       ? "bg-primary text-primary-foreground"
                       : "text-muted-foreground hover:text-foreground hover:bg-card"
-                  }`}
+                    }`}
                 >
                   {label}
                 </button>
@@ -164,7 +163,7 @@ export function Header() {
                 style={{ display: "flex", alignItems: "center", gap: "0.5rem", textDecoration: "none" }}
               >
                 <div style={{ position: "relative", width: "2rem", height: "2rem", borderRadius: "0.375rem", overflow: "hidden", flexShrink: 0 }}>
-                  <Image src="/logo.jpg" alt="ApexCam Logo" fill className="object-cover" />
+                  <Image src="/logo.png" alt="ApexCam Logo" fill className="object-cover" />
                 </div>
                 <span style={{ fontSize: "1.25rem", fontWeight: 700, color: "#ffffff" }}>
                   Apex<span style={{ color: "#E5A93D" }}>Cam</span>
@@ -199,8 +198,8 @@ export function Header() {
               {[
                 { href: "/#features", label: t.header.features },
                 { href: "/#hardware", label: t.header.hardware },
-                { href: "/#app",      label: t.header.app },
-                { href: "/#contact",  label: t.header.contact },
+                { href: "/#app", label: t.header.app },
+                { href: "/#contact", label: t.header.contact },
               ].map(({ href, label }) => (
                 <Link
                   key={href}

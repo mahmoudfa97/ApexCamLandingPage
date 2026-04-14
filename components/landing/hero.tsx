@@ -13,12 +13,12 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center pt-16 sm:pt-20 overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-card" />
-      <div className="absolute top-1/4 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute top-1/4 ltr:right-0 rtl:left-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-20 lg:py-32">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left side - Content */}
-          <div className="text-center lg:text-left">
+          <div className="text-center lg:text-start">
             <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 border border-primary/20 px-4 py-1.5 text-sm font-medium text-primary mb-8">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
@@ -81,10 +81,14 @@ export function Hero() {
                   className="relative rounded-[2rem] shadow-2xl shadow-black/50 border-4 border-card"
                   priority
                 />
+                {/* Decorative Logo */}
+                <div className="absolute top-16 ltr:-left-10 rtl:-right-10 z-20 w-20 h-20 border-4 border-background rounded-2xl hidden lg:block overflow-hidden shadow-xl bg-background">
+                  <img src="/logo.png" alt="ApexCam Logo" className="w-full h-full object-contain rounded-xl" />
+                </div>
               </div>
 
               {/* Secondary Screenshot - Map View */}
-              <div className="relative -ml-8 mb-8">
+              <div className="relative ltr:-ml-8 rtl:-mr-8 mb-8">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cbbf07fe-882c-45cf-a937-0b9042891a6b-8FeoTjZM8Kt8PzvnOYtfz6jNx2xCzu.jpeg"
                   alt="ApexCam Mobile App - GPS tracking and navigation"
@@ -96,10 +100,7 @@ export function Hero() {
             </div>
 
             {/* Decorative elements */}
-            <div className="absolute top-8 left-8 w-16 h-16 border-2 border-primary/30 rounded-2xl hidden lg:block overflow-hidden">
-              <img src="/logo.jpg" alt="ApexCam Logo" className="w-full h-full object-cover rounded-2xl" />
-            </div>
-            <div className="absolute -bottom-8 right-0 w-40 h-40 bg-primary/10 rounded-full blur-3xl" />
+            <div className="absolute -bottom-8 ltr:right-0 rtl:left-0 -z-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl" />
           </div>
         </div>
       </div>
