@@ -106,6 +106,7 @@ const en = {
     getStarted: "Get Started Today",
     copyright: "© 2026 ApexCam. All rights reserved.",
     privacy: "Privacy",
+    deleteAccount: "Delete Account",
     terms: "Terms",
   },
   demoModal: {
@@ -347,6 +348,28 @@ const en = {
     s16AppLabel: "App:",
     copyright: "© {year} {company}. All rights reserved.",
   },
+  deleteAccount: {
+    title: "Delete Account",
+    intro: "You can request account deletion directly within the ApexCam app settings or by following the instructions below.",
+    step1Title: "1. Send a Request",
+    step1Desc: "To ensure the security of your data, account deletions are processed manually. Please contact our support team from the email address associated with your account.",
+    step2Title: "2. Provide Information",
+    step2Desc: "Include your full name and any relevant details (such as your organization) in your email. To protect your account, we may verify your identity before completing the deletion request.",
+    dataScopeTitle: "Data Deletion Details",
+    dataScopeIntro: "When you request account deletion, we will permanently delete the following data associated with your account:",
+    dataScopeItems: [
+      "Account information (name, email, profile details)",
+      "Recorded videos and playback data",
+      "Snapshots and media files",
+      "Location and tracking data",
+      "Any associated device or usage data"
+    ],
+    timeframe: "All data will be permanently deleted from our systems within 7 days of processing your request. Some limited information may be retained if required for legal or security purposes.",
+    contactEmailLabel: "Support Email:",
+    contactEmail: "support@apex-view.org",
+    buttonText: "Request Deletion via Email",
+    legalNote: "Note: If your account is managed by your organization, please contact your administrator before requesting deletion.",
+  },
 }
 
 // ─── Arabic ────────────────────────────────────────────────────
@@ -454,6 +477,7 @@ const ar: typeof en = {
     getStarted: "ابدأ اليوم",
     copyright: "© 2026 ApexCam. جميع الحقوق محفوظة.",
     privacy: "الخصوصية",
+    deleteAccount: "حذف الحساب",
     terms: "الشروط",
   },
   demoModal: {
@@ -695,6 +719,28 @@ const ar: typeof en = {
     s16AppLabel: "التطبيق:",
     copyright: "© {year} {company}. جميع الحقوق محفوظة.",
   },
+  deleteAccount: {
+    title: "حذف الحساب",
+    intro: "يمكنك طلب حذف الحساب مباشرة من إعدادات تطبيق ApexCam أو باتباع التعليمات أدناه.",
+    step1Title: "١. إرسال طلب",
+    step1Desc: "لضمان أمان بياناتك، تتم معالجة عمليات حذف الحساب يدويًا. يرجى التواصل مع فريق الدعم من عنوان البريد الإلكتروني المرتبط بحسابك.",
+    step2Title: "٢. تقديم المعلومات",
+    step2Desc: "قم بتضمين اسمك الكامل وأي تفاصيل ذات صلة (مثل مؤسستك) في رسالتك. لحماية حسابك، قد نتحقق من هويتك قبل إكمال طلب الحذف.",
+    dataScopeTitle: "تفاصيل حذف البيانات",
+    dataScopeIntro: "عندما تطلب حذف حسابك، سنقوم بحذف البيانات التالية المرتبطة بحسابك نهائيًا:",
+    dataScopeItems: [
+      "معلومات الحساب (الاسم، البريد الإلكتروني، تفاصيل الملف الشخصي)",
+      "مقاطع الفيديو المسجلة وبيانات التشغيل",
+      "اللقطات وملفات الوسائط",
+      "بيانات الموقع والتتبع",
+      "أي بيانات مرتبطة بالجهاز أو الاستخدام"
+    ],
+    timeframe: "سيتم حذف جميع البيانات نهائيًا من أنظمتنا خلال 7 أيام من معالجة طلبك. قد يتم الاحتفاظ ببعض المعلومات المحدودة إذا كان ذلك مطلوبًا لأغراض قانونية أو أمنية.",
+    contactEmailLabel: "البريد الإلكتروني للدعم:",
+    contactEmail: "support@apex-view.org",
+    buttonText: "طلب الحذف عبر البريد",
+    legalNote: "ملاحظة: إذا كان حسابك يُدار بواسطة مؤسستك، يرجى التواصل مع المسؤول قبل طلب الحذف.",
+  },
 }
 
 // ─── Hebrew ────────────────────────────────────────────────────
@@ -802,6 +848,7 @@ const he: typeof en = {
     getStarted: "התחל היום",
     copyright: "© 2026 ApexCam. כל הזכויות שמורות.",
     privacy: "פרטיות",
+    deleteAccount: "מחיקת חשבון",
     terms: "תנאים",
   },
   demoModal: {
@@ -1042,6 +1089,28 @@ const he: typeof en = {
     s16WebsiteLabel: "אתר אינטרנט:",
     s16AppLabel: "אפליקציה:",
     copyright: "© {year} {company}. כל הזכויות שמורות.",
+  },
+  deleteAccount: {
+    title: "מחיקת חשבון",
+    intro: "באפשרותך לבקש את מחיקת חשבונך ישירות דרך הגדרות אפליקציית ApexCam או על ידי ביצוע ההוראות להלן.",
+    step1Title: "1. שלח בקשה",
+    step1Desc: "כדי להבטיח את אבטחת הנתונים שלך, מחיקות חשבון מטופלות באופן ידני. צור קשר עם צוות התמיכה שלנו מכתובת הדוא\"ל המקושרת לחשבונך.",
+    step2Title: "2. ספק מידע",
+    step2Desc: "כולל את שמך המלא וכל פרט רלוונטי (כגון הארגון שלך) בדוא\"ל שלך. כדי להגן על חשבונך, אנו עשויים לאמת את זהותך לפני השלמת בקשת המחיקה.",
+    dataScopeTitle: "פרטי מחיקת נתונים",
+    dataScopeIntro: "כאשר תבקש למחוק את חשבונך, נמחק לצמיתות את הנתונים הבאים המקושרים לחשבונך:",
+    dataScopeItems: [
+      "מידע על החשבון (שם, דוא\"ל, פרטי פרופיל)",
+      "סרטונים מוקלטים ונתוני השמעה",
+      "תמונות וקובצי מדיה",
+      "נתוני מיקום ומעקב",
+      "כל נתוני מכשיר או שימוש הקשורים אליו"
+    ],
+    timeframe: "כל הנתונים יימחקו לצמיתות מהמערכות שלנו תוך 7 ימים ממועד עיבוד בקשתך. ייתכן ומידע מוגבל יישמר במידה והדבר נדרש מסיבות משפטיות או ביטחוניות.",
+    contactEmailLabel: "דוא\"ל תמיכה:",
+    contactEmail: "support@apex-view.org",
+    buttonText: "בקש מחיקה באמצעות דוא\"ל",
+    legalNote: "הערה: אם חשבונך מנוהל על ידי הארגון שלך, צור קשר עם מנהל המערכת לפני בקשת המחיקה.",
   },
 }
 

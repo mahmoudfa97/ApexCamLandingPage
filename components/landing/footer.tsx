@@ -33,6 +33,7 @@ export function Footer() {
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-foreground transition-colors">{t.footer.privacy}</Link>
             <Link href="/terms" className="hover:text-foreground transition-colors">{t.footer.terms}</Link>
+            <Link href="/delete-account" className="hover:text-foreground transition-colors">{t.footer.deleteAccount}</Link>
           </div>
         </div>
       </div>
