@@ -20,7 +20,7 @@ export function Footer() {
             {t.footer.ctaDescription}
           </p>
           <Button size="lg" className="bg-primary text-primary-foreground hover:bg-gold-light font-semibold text-base px-10 glow-gold" asChild>
-            <a href="https://web.whatsapp.com/send?phone=972504302248" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/+972504302248" target="_blank" rel="noopener noreferrer">
               {t.footer.getStarted} <ArrowRight className="ml-2 h-4 w-4" />
             </a>
           </Button>

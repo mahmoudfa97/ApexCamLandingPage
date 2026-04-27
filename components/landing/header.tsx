@@ -90,8 +90,8 @@ export function Header() {
                   key={code}
                   onClick={() => setLocale(code)}
                   className={`px-3 py-1 text-xs font-semibold transition-colors ${locale === code
-                      ? "bg-primary text-primary-foreground"
-                      : "text-muted-foreground hover:text-foreground hover:bg-card"
+                    ? "bg-primary text-primary-foreground"
+                    : "text-muted-foreground hover:text-foreground hover:bg-card"
                     }`}
                 >
                   {label}
@@ -99,7 +99,7 @@ export function Header() {
               ))}
             </div>
             <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold cursor-pointer">
-              <Link href="https://web.whatsapp.com/send?phone=972504302248" target="_blank" rel="noopener noreferrer">
+              <Link href="https://wa.me/+972504302248" target="_blank" rel="noopener noreferrer">
                 {t.header.requestDemo}
               </Link>
             </Button>
@@ -245,7 +245,7 @@ export function Header() {
 
             {/* CTA */}
             <a
-              href="https://web.whatsapp.com/send?phone=972504302248"
+              href="https://wa.me/+972504302248"
               target="_blank"
               rel="noopener noreferrer"
               onClick={closeMenu}

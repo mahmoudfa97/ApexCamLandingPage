@@ -104,7 +104,7 @@ export function AppFeatures() {
             </svg>
             <div>
               <div className="text-xs text-muted-foreground">{t.appFeatures.getItOn}</div>
-              <Link href="https://play.google.com/store/apps/details?id=com.apexcam.app" target="_blank" rel="noopener noreferrer">
+              <Link href="https://play.google.com/store/apps/details?id=com.mahmoudfaour.apexcam" target="_blank" rel="noopener noreferrer">
                 <div className="text-sm font-semibold text-foreground">{t.appFeatures.googlePlay}</div>
               </Link>
             </div>
