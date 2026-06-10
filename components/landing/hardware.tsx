@@ -6,6 +6,15 @@ import { useTranslation } from "@/contexts/language-context"
 
 const SPEC_ICONS = [Camera, Shield, Wifi, Plug, HardDrive, Thermometer]
 
+const HIGHLIGHT_POINTS = [
+  { id: "mdvr", x: "18%", y: "56%", key: "mdvr" as const },
+  { id: "monitor", x: "34%", y: "53%", key: "monitor" as const },
+  { id: "leftSideCam", x: "19%", y: "51%", key: "leftSideCam" as const },
+  { id: "rightSideCam", x: "44%", y: "54%", key: "rightSideCam" as const },
+  { id: "frontCam", x: "23%", y: "48%", key: "frontCam" as const },
+  { id: "rearCam", x: "82%", y: "62%", key: "rearCam" as const },
+]
+
 export function Hardware() {
   const t = useTranslation()
   const specs = t.hardware.specs
@@ -32,15 +41,33 @@ export function Hardware() {
               <div className="relative aspect-square max-w-lg mx-auto">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent rounded-3xl" />
                 <Image
-                  src="/images/mdvr-device.jpg"
+                  src="/images/mdvr-device.png"
                   alt="ApexCam 4-Camera MDVR Kit - Professional fleet recording system"
                   fill
                   className="object-cover rounded-3xl"
                 />
                 {/* Highlight points */}
-                <div className="absolute top-1/4 left-1/4 w-4 h-4 bg-primary rounded-full animate-pulse" />
-                <div className="absolute top-1/2 right-1/4 w-4 h-4 bg-primary rounded-full animate-pulse delay-300" />
-                <div className="absolute bottom-1/3 left-1/3 w-4 h-4 bg-primary rounded-full animate-pulse delay-500" />
+                {HIGHLIGHT_POINTS.map((point) => (
+                  <div
+                    key={point.id}
+                    className="group absolute w-8 h-8 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center cursor-pointer z-10"
+                    style={{ left: point.x, top: point.y }}
+                  >
+                    {/* Ripple effect rings */}
+                    <span className="absolute inline-flex h-full w-full rounded-full bg-primary/40 opacity-75 animate-ping duration-1000" />
+                    {/* Inner core dot */}
+                    <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-primary shadow-lg border border-background shadow-primary/50 group-hover:scale-110 transition-transform duration-300" />
+                    
+                    {/* Sleek Tooltip card */}
+                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 opacity-0 pointer-events-none scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 ease-out z-20 flex flex-col items-center">
+                      <div className="bg-popover text-popover-foreground text-xs font-semibold px-3 py-1.5 rounded-lg border border-border shadow-xl whitespace-nowrap backdrop-blur-md bg-opacity-95">
+                        {t.hardware.highlights[point.key]}
+                      </div>
+                      {/* Down arrow */}
+                      <div className="w-2.5 h-2.5 bg-popover border-r border-b border-border rotate-45 -mt-1.5 backdrop-blur-md bg-opacity-95" />
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
 

@@ -49,6 +49,14 @@ const en = {
       { count: "4x", item: "Camera Mounts" },
       { count: "1x", item: "Installation Kit" },
     ],
+    highlights: {
+      mdvr: "MDVR Main Unit",
+      frontCam: "Front HD Camera",
+      leftSideCam: "Side HD Camera (Left)",
+      rightSideCam: "Side HD Camera (Right)",
+      rearCam: "Rear HD Camera",
+      monitor: "5\" Screen Monitor",
+    },
   },
   appFeatures: {
     sectionLabel: "Mobile App",
@@ -420,6 +428,14 @@ const ar: typeof en = {
       { count: "4×", item: "حوامل الكاميرات" },
       { count: "1×", item: "طقم التركيب" },
     ],
+    highlights: {
+      mdvr: "وحدة MDVR الرئيسية",
+      frontCam: "كاميرا HD أمامية",
+      leftSideCam: "كاميرا HD جانبية (يسار)",
+      rightSideCam: "كاميرا HD جانبية (يمين)",
+      rearCam: "كاميرا HD خلفية",
+      monitor: "شاشة عرض 5 بوصة",
+    },
   },
   appFeatures: {
     sectionLabel: "تطبيق الهاتف",
@@ -791,6 +807,14 @@ const he: typeof en = {
       { count: "4×", item: "תושבות מצלמה" },
       { count: "1×", item: "ערכת התקנה" },
     ],
+    highlights: {
+      mdvr: "יחידת MDVR ראשית",
+      frontCam: "מצלמת HD קדמית",
+      leftSideCam: "מצלמת HD צדדית (שמאל)",
+      rightSideCam: "מצלמת HD צדדית (ימין)",
+      rearCam: "מצלמת HD אחורית",
+      monitor: "מסך תצוגה 5 אינץ'",
+    },
   },
   appFeatures: {
     sectionLabel: "אפליקציה לנייד",

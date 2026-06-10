@@ -74,7 +74,7 @@ export function Hero() {
               <div className="relative">
                 <div className="absolute inset-0 bg-primary/20 rounded-[2rem] blur-2xl transform translate-y-4" />
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/58f16a22-3eb2-4e2e-aec5-a2ab43c74c77-4jOgWrPT41HL9clHF24AbnYFBPnjEA.jpeg"
+                  src="/images/screenshots/app-3.jpeg"
                   alt="ApexCam Mobile App - 4-channel live view with real-time telemetry"
                   width={280}
                   height={560}
@@ -90,7 +90,7 @@ export function Hero() {
               {/* Secondary Screenshot - Map View */}
               <div className="relative ltr:-ml-8 rtl:-mr-8 mb-8">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cbbf07fe-882c-45cf-a937-0b9042891a6b-8FeoTjZM8Kt8PzvnOYtfz6jNx2xCzu.jpeg"
+                  src="/images/screenshots/app-2.jpeg"
                   alt="ApexCam Mobile App - GPS tracking and navigation"
                   width={200}
                   height={400}
