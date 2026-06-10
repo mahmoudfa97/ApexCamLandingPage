@@ -2,8 +2,8 @@
 
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Play } from "lucide-react"
-import { DemoModal } from "./demo-modal"
+import { Play } from "lucide-react"
+import Link from "next/link"
 import { useTranslation } from "@/contexts/language-context"
 
 export function Hero() {
@@ -37,15 +37,17 @@ export function Hero() {
             </p>
 
             <div className="mt-8 sm:mt-10 flex flex-col items-stretch sm:flex-row sm:items-center gap-3 sm:gap-4 justify-center lg:justify-start">
-              <DemoModal>
-                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-6 sm:px-8 h-11 sm:h-12 text-sm sm:text-base cursor-pointer w-full sm:w-auto">
-                  {t.hero.requestDemo}
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </DemoModal>
+              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-6 sm:px-8 h-11 sm:h-12 text-sm sm:text-base cursor-pointer w-full sm:w-auto">
+                <Link href="https://wa.me/+972504302248" target="_blank" rel="noopener noreferrer">
+                  {t.header.requestDemo}
+                </Link>
+              </Button>
               <Button variant="outline" size="lg" className="border-border text-foreground hover:bg-card h-11 sm:h-12 text-sm sm:text-base w-full sm:w-auto">
                 <Play className="mr-2 h-4 w-4" />
-                {t.hero.watchOverview}
+
+                <Link href="https://www.instagram.com/apex.cam.view" target="_blank" rel="noopener noreferrer">
+                  {t.hero.watchOverview}
+                </Link>
               </Button>
             </div>
 
